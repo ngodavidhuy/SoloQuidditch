@@ -3,3 +3,19 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+.board {
+	border: 2px solid red;
+}
+
+.harry {
+	position: aboslute;
+	z-index: 3;
+}
+
+.snitch {
+	z-index: 2;
+}
+
+.bludger {
+	z-index: 1;
+};
