@@ -1,15 +1,21 @@
 {
-  "name": "watchout",
-  "version": "1.0.1",
-  "description": "Asteroids-style game implemented using D3.js",
-  "main": "client/index.html",
+  "name": "soloQuidditch",
+  "version": "1.0.0",
+  "description": "This is an MVP of a interactive browser game built using d3.js. A single-player, Harry Potter inspired game. The goal is to constantly avoid the bludgers to accumulate points. But wait, what is a game of quidditch without the golden snitch? Players are incentivized catch the snitch for bonus points! The highest score is constantly updated if the record is broken. Check it out!",
+  "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo 'Error: no test specified'",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "open client/index.html"
   },
-  "license": "Copyright 2015, Hack Reactor. All rights reserved.",
-  "bugs": {
-    "url": "https://github.com/reactorcore/sprint.watchout/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngodavidhuy/soloquidditch.git"
   },
-  "homepage": "https://github.com/reactorcore/sprint.watchout"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngodavidhuy/soloquidditch/issues"
+  },
+  "homepage": "https://github.com/ngodavidhuy/soloquidditch#readme"
 }
