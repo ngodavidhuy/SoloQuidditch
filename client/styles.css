@@ -1,14 +1,20 @@
-/* your beautiful css styling goes here! */
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
 
-/* Note: an asteroid image is included in this repo.
-Feel free to use it if you like. */
+.logo {
+	width: 100px;
+	height: 50px;
+}
 
 .board {
-	border: 2px solid red;
+	border: 1px solid yellow;
+	background: url(./img/arena.jpg) no-repeat center;
+	background-size: cover;
 }
 
 .harry {
-	position: aboslute;
 	z-index: 3;
 }
 
