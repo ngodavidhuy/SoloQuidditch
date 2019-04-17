@@ -1,5 +1,3 @@
-// start slingin' some d3 here.
-
 ///////////////////////////////////////////////////////////////
 // SETTINGS
 
@@ -40,7 +38,7 @@ let bludgers = gameBoard.selectAll('.bludger')
 												.enter()
 												.append('image')
 												.attr('class', 'bludger')
-												.attr('xlink:href', 'bludger.png')
+												.attr('xlink:href', './img/bludger.png')
 												.attr('x', function() { return scales.bludgerXScale(randNumGenerator(width)); })
                     		.attr('y', function() { return scales.bludgerYScale(randNumGenerator(height)); })
                     		.attr('width', 50)
@@ -51,7 +49,7 @@ let snitch = gameBoard.selectAll('.snitch')
 											.enter()
 											.append('image')
 											.attr('class', 'snitch')
-											.attr('xlink:href', 'snitch.png')
+											.attr('xlink:href', './img/snitch.png')
 											.attr('x', function() { return scales.snitchXScale(randNumGenerator(width)); })
                     	.attr('y', function() { return scales.snitchYScale(randNumGenerator(height)); })
 											.attr('width', 100)
@@ -62,7 +60,7 @@ let harry = gameBoard.selectAll('.player')
 									.enter()
 									.append('image')
 									.attr('class', 'player')
-									.attr('xlink:href', 'harry.png')
+									.attr('xlink:href', './img/harry.png')
 									.attr('x', (width / 2))
 									.attr('y', (height / 2))
 									.attr('width', 100)
@@ -144,75 +142,3 @@ function checkCollisions() {
 flyingBludgers(bludgers);
 setInterval(scoreUpdater, 100);
 d3.timer(checkCollisions);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let harry = gameBoard.selectAll('.player')
-// 									.data(d3.range(1))
-// 									.enter()
-// 									.append('circle')
-// 									.attr('class', 'player')
-// 									.attr('fill', 'black')
-// 									.attr('cx', (width / 2))
-// 									.attr('cy', (height / 2))
-// 									.attr('r', settings.playerOneRadius);
-
-
-
-
-// let bludgers = gameBoard.selectAll('.bludger')
-//                     .data(d3.range(settings.bludgerCount))
-//                     .enter().append('embed').attr('class', 'bludger')
-//                     .attr('src', 'bludger.png')
-//                     .attr('x', function() { return randNumGenerator(width); })
-//                     .attr('y', function() { return randNumGenerator(height); })
-//                     // .attr('r', settings.bludgerRadius )
-
-
-
-
